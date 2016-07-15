@@ -91,5 +91,9 @@ p.caption{
 }
 
 .small{
-font-size:10px;
+	font-size:10px;
+}
+
+.large-font{
+	font-size: 1.8em;	
 }

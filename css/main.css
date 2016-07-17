@@ -1,42 +1,76 @@
+/*==============================
+
+Style Sheet for Glass Mamba
+
+Table of Contents:
+
+01. General HTML Tag Styles
+02. Home, Header, Nav
+03. About 
+04. Resume 
+05. Work
+06. Clients
+07. Journal
+08. Contact
+
+=================================*/
+
+/*==============================
+
+== 01. General HTML Tag Styles ==
+
+=================================*/
+
 #main-container{
 	margin: auto;
-	width: 1280px;
 }
 
+/*==========================
 
-ul.navbar {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+== 02. Home, Header, Nav ==
+
+============================*/
+
+.header-container {
+	background-image:url(../img/hero.jpg);
+	background-size:cover;
+}
+
+ul.my-navbar {
+	list-style-type:none;
 	background-color: black;
     overflow: hidden;
+	
 }
 
-li {
+.my-navbar li {
     float: right;
 }
 
 li a {
+	margin:10px;
 	display: block;
 	color: white;
 	text-align: center;
-	padding: 10px 5px;
+	padding-bottom:4px;
 	text-decoration: none;
-	font-family: 'Lora', serif;
+	font-family: 'Poppins', sans-serif;
 	text-transform: uppercase;	
 }
 
 li a:hover {
-	color: #DDE539;
+	color: #fed605;
 	text-decoration: none;
-	border-bottom: yellow 1px solid;
+	border-bottom: #fed605 1px solid;
 	padding-bottom: 3px;
 }
 
-.header-container {
-	height: 850px;
-	background-image:url(../img/hero.jpg)
-}
+/*=============
+
+== 03. About ==
+
+===============*/
+
 .about-container {
 	margin-top: 100px;
 	text-align: center;
@@ -49,7 +83,7 @@ h1.landing-header{
 	/*font-family: 'Poppins', sans-serif;*/
 	font-weight: bold;
 	font-size: 13em;
-	color: yellow;
+	color: #fed605;
 }
 
 h1.section-header{
@@ -86,8 +120,9 @@ p.caption{
 .about-info{
 	margin-top: 20px;
     height: 460px;
-	font-size: 10px;	
+	font-size: 0.4em;	
 	text-align: left;
+	font-family:'Lora', serif;
 }
 
 .small{

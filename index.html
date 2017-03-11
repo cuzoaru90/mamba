@@ -1,93 +1,689 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
   <head>
+    <meta charset="utf-8">
 
-    <title>Glass Mamba</title>
-    <!--meta tags section-->
+    <!-- Mobile Specific Metas
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
     
-    <!--links to stylesheets-->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="css/main.css">
-    <link rel="stylesheet" href= "http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
-    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Lora">
-    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Poppins">
+    <!-- Page title
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+	<title>Glass Mamba</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,300,500,600,700" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,400italic,700,700italic" rel="stylesheet" type="text/css">
    
+    <!-- CSS
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+    <!-- Icons
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="stylesheet" href="assets/icons/Linea/style.css" />
+    <link rel="stylesheet" href="assets/icons/Elegant/style.css" />
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <script src="assets/js/modernizr.js"></script>
 
   </head>
 
-    <body>
-      <div id="main-container">
-        <section class="header-container">
-          <ul class="my-navbar">  
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="#journal">Journal</a></li>
-                <li><a href="#clients">Clients</a></li>
-                <li><a href="#work">Work</a></li>
-                <li><a href="#resume">Resume</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#home">Home</a></li>
-          </ul>
-          <h1 class = "landing-header"> Glass Mamba</h1>
-          <p class="subtitle">Design. Develop. Launch.</p>
-        </section>
+<!-- Body Start
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<body>
+<!-- Loader
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div id="loader">
+    <div class="spinner">
+      <div class="double-bounce1"></div>
+      <div class="double-bounce2"></div>
+    </div>
+    <h3 class="title-load">Loading</h3>
+  </div>
 
-        <section class="about-container">
-          <h1 class = "section-header"> We are Glass Mamba</h1>
-          <p class="caption">About Us</p>
-          <article class="col-lg-6 about-info">
-            <h1>Hello World!</h1><br>
-            <p>Glass Mamba is a website that showcases the web design and web development skills of Chuck Uzoaru and Don Kada. For all prospective clients, this portfolio will provide them with the necessary needed to enlist our aid in their requested project. </p> <br> <p> Our focus is to provide the best user experience possible. We've worked with several brands, both large and small. We love the challenge and satisfication of solving a client's problem.</p>
-          </article>
+<!-- Header Bar
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <header id="headerBar" class="headerTop">
 
-          <summary class="col-lg-6 about-info">
-            <div class = "row">
-              <h1 class="small col-sm-3">HTML</h1> <h1 class="small col-sm-1 col-md-offset-7">90%</h1>
-            </div>
-            <!-- Nested div class to display progress bar. -->
-            <div class = "bar"><div class = "progress" style="width: 90%"></div></div> <br>
+        <div class="container-fluid">
 
-            <div class = "row">
-              <h1 class="small col-sm-3">WordPress</h1> <h1 class="small col-sm-1 col-md-offset-7">80%</h1>
+          <!--Header logo on the left side-->
+
+          <div class="col-md-4 col-sm-1 col-xs-4 headerLeft">
+          <a href="index.html">
+            <img src="assets/images/site-logo2.png" alt="">
+          </a>
+          </div>
+
+          <!--Header right side with left-aligned menu-->
+
+          <div class="col-md-8 col-sm-11 col-xs-8 headerRight">
+            <div class="header-right">
+
+              <!--Navigation-->
+              <nav class="navigation">
+
+                <div class="navbar-header">
+                  <span class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <i class="fa fa-bars"></i>
+                  </span>
+                </div>
+
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+                    <ul class="navbar navbar-right">
+                      <li><a href="#sectionIntro" class="easing">Home</a></li>
+                      <li><a href="#sectionAbout" class="easing">About</a></li>
+                      <li><a href="#sectionResume" class="easing">Resume</a></li>
+                      <li><a href="#sectionPortfolio" class="easing">Work</a></li>
+                      <li><a href="#sectionClients" class="easing">Clients</a></li>
+                      <li><a href="#sectionJournal" class="easing">Journal</a></li>
+                      <li><a href="#sectionContact" class="easing">Contact</a></li>
+                    </ul>
+
+                </div>
+
+              </nav>
+              <!--END Navigation-->
+
             </div>
-            <div class = "bar"><div class = "progress" style="width: 80%"></div></div> <br>
+          </div>
+           <!--END Header right side-->
+
+
+        </div>
+        <!--END container-->
+      </header>
+      <!--END Header bar-->
+
+
+
+<!-- section Intro
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+	
+      <section id="sectionIntro" class="parallax">
+        <div class="col-md-12 col-sm-12 col-xs-12">
+          <div class="container-fluid">
+
+            <div class="textIntro">
+              <div class="hi">
+              <h1>Glass Mamba</h1>
+              <span>Design. Develop. Launch.</span><br>
+              <a href="#sectionAbout" class="easing">
+              <img src="assets/images/arrow.png" alt="">
+              </a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section> 
+
+
+
+<!-- section About
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+    <section id="sectionAbout">
+
+      <div class="container">
+        <div class="sectionTitle">
+          <h1>We are Glass Mamba</h1>
+          <span>About us</span>
+        </div>
+
+        <div class="row">
+        <div class="col-md-6 col-sm-12 col-xs-12 story">
+          <h2>Hello World!</h2>
+          <p>Glass Mamba is a web development company that specializes in e-commerce pages. It is composed of Chuck Uzoaru and Don Kada. We are here to help sell your personal brand or business.</p> 
+
+          <p>We have worked with a variety of clients that include individual persons and local businesses. The right column demonstrates Glass Mamba's proficiencies.</p>
+        </div>
+
+        <div class="col-md-6 col-sm-12 col-xs-12 skills">
+
+            <h5>HTML & CSS<span>90%</span></h5>
+            <div class="progress">
+            <div class="progress-bar" role="progressbar" aria-valuenow="90" style="width:90%;" aria-valuemin="0" aria-valuemax="100">
+            </div>
+            </div>
             
-            <div class = "row">
-              <h1 class="small col-sm-3">Photoshop</h1> <h1 class="small col-sm-1 col-md-offset-7">95%</h1>
+            <h5>Wordpress<span>83%</span></h5>
+            <div class="progress">
+            <div class="progress-bar" role="progressbar" aria-valuenow="83" style="width:83%;" aria-valuemin="0" aria-valuemax="100">
             </div>
-            <div class = "bar"><div class = "progress" style="width: 95%"></div></div> <br>
-            
-            <div class = "row">
-              <h1 class="small col-sm-3">JavaScript</h1> <h1 class="small col-sm-1 col-md-offset-7">85%</h1>
             </div>
-            <div class = "bar"><div class = "progress" style="width: 85%"></div></div> <br>
-            
-            <div class = "row">
-              <h1 class="small col-sm-3">AngularJS</h1> <h1 class="small col-sm-1 col-md-offset-7">70%</h1>
+
+            <h5>Photoshop<span>95%</span></h5>
+            <div class="progress">
+            <div class="progress-bar" role="progressbar" aria-valuenow="95" style="width:95%;" aria-valuemin="0" aria-valuemax="100">
             </div>
-            <div class = "bar"><div class = "progress" style="width: 70%"></div></div>  
-          </summary>
+            </div>
+
+            <h5>Javascript<span>86%</span></h5>
+            <div class="progress">
+            <div class="progress-bar" role="progressbar" aria-valuenow="86" style="width:86%;" aria-valuemin="0" aria-valuemax="100">
+            </div>
+            </div>
+
+            <h5>Angular JS<span>70%</span></h5>
+            <div class="progress">
+            <div class="progress-bar" role="progressbar" aria-valuenow="70" style="width:70%;" aria-valuemin="0" aria-valuemax="100">
+            </div>
+            </div>
           
-          <figure class = "row">
-            <h1 class="col-sm-2 ion-ios-monitor large-font"></h1> <h1 class="col-sm-2 large-font">100</h1><h1 class="col-sm-2 ion-iphone large-font"></h1><h1 class="small col-sm-2 large-font">30</h1><h1 class="col-sm-2 ion-laptop large-font"></h1><h1 class="col-sm-2 large-font">5</h1>
-          </figure>
-            
-          <figcaption class = "row">
-            <h1 class="small col-sm-2">Webmaster</h1> <h1 class="small col-sm-2">Happy Clients</h1><h1 class="small col-sm-2">Developer</h1><h1 class="small col-sm-2">Projects Done</h1><h1 class="small col-sm-2">Freelancer</h1><h1 class="small col-sm-2">Awards Won</h1>
-          </figcaption>
+        </div>
+        </div>
 
-        </section>
+        <div class="row about-icons">
 
-        <section class="resume-container"></section> 
-        
+          <div class="col-md-2 col-sm-4 col-xs-6 about-iconbox">
+          <div class="icon icon-basic-webpage-txt"></div>
+          <h6>Webmaster</h6>
+          </div>
+
+          <div class="col-md-2 col-sm-4 col-xs-6 about-iconbox">
+          <div class="title-icon"><h1>100</h1></div>
+          <h6>Happy clients</h6>
+          </div>
+
+          <div class="col-md-2 col-sm-4 col-xs-6 about-iconbox">
+          <div class="icon icon-basic-keyboard"></div>
+          <h6>Developer</h6>
+          </div>
+
+          <div class="col-md-2 col-sm-4 col-xs-6 about-iconbox">
+          <div class="title-icon"><h1>30</h1></div>
+          <h6>Projects Done</h6>
+          </div>
+
+          <div class="col-md-2 col-sm-4 col-xs-6 about-iconbox">
+          <div class="icon icon-basic-laptop"></div>
+          <h6>Freelancer</h6>
+          </div>
+
+          <div class="col-md-2 col-sm-4 col-xs-6 about-iconbox">
+          <div class="title-icon"><h1>5</h1></div>
+          <h6>Awards won</h6>
+          </div>
+
+        </div>
+
       </div>
-      
-    <!-- links to JavaScript files -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-    </body>
+
+    </section>
     
+    <!-- section Resume
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+		
+    <section id="sectionResume"> 
+
+      <div class="container">
+
+        <div class="sectionTitle">
+          <h1>Our past experience</h1>
+          <span>Resume</span>
+        </div>
+
+        <div class="resume-line row">
+
+        <div class="col-md-3 col-sm-4 col-xs-12 resume-left">
+        <h3>2 years</h3>
+        <p>2010-2013</p>
+        </div>
+
+        <div class="col-md-9 col-sm-8 col-xs-12 resume-right first-right">
+        <h3>Art & Creative director</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+
+        </div>
+
+        <div class="resume-line row">
+
+        <div class="col-md-3 col-sm-4 col-xs-12 resume-left">
+        <h3>3 years</h3>
+        <p>2011-2014</p>
+        </div>
+
+        <div class="col-md-9 col-sm-8 col-xs-12 resume-right">
+        <h3>Front-end designer</h3>
+        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat officia deserunt mollit anim id est laborum.</p>
+        </div>
+
+        </div>
+
+        <div class="resume-line row">
+
+        <div class="col-md-3 col-sm-4 col-xs-12 resume-left">
+        <h3>2 years</h3>
+        <p>2009-2011</p>
+        </div>
+
+        <div class="col-md-9 col-sm-8 col-xs-12 resume-right">
+        <h3>Web designer & developer</h3>
+        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+        </div>
+
+        </div>
+
+        <div class="resume-line last-line row">
+
+        <div class="col-md-3 col-sm-4 col-xs-12 resume-left">
+        <h3>1 year</h3>
+        <p>2008-2009</p>
+        </div>
+
+        <div class="col-md-9 col-sm-8 col-xs-12 resume-right">
+        <h3>Mid-level designer</h3>
+        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui.</p>
+        </div>
+
+        </div>
+
+      </div>
+         
+    </section>
+
+		
+    <!-- section Portfolio
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <section id="sectionPortfolio">
+           
+          <div class="sectionTitle">
+
+              <h1>Latest projects</h1>
+
+              <ul class="filters filters-group">
+                <li class="filter is-checked" data-filter="*">All</li>
+                <li class="filter" data-filter=".ill">Illustrations</li>
+                <li class="filter" data-filter=".brand">Branding</li>  
+              </ul>
+
+          </div>       
+
+        <!--GRID ITEMS-->
+
+     <!--GRID START-->
+
+    <div class="container">
+
+    <div id="isotopeGrid" class="mGrid row">
+
+        <div class="gutter-sizer"></div>
+
+            
+            <div class="grid-item no-pad-grid item-five brand fs">
+
+              <a class="image-modal" href="#image-modal1">
+
+                <img src="assets/images/1.jpg" alt="">
+
+                  <div class="itemHover">
+                  </div>
+                  <h4>Plant</h4>
+                  <h6>Branding</h6>
+
+              </a>
+
+              <div id="image-modal1" class="mfp-hide modal-box">
+                  <img src="assets/images/1.jpg" alt="">
+                  <div class="modal-box-content">
+                    <h4>Plant</h4>
+                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat. </p>
+                  </div>
+              </div>         
+
+            </div>
 
 
+          <div class="grid-item item-five ill">
+
+              <a class="image-modal" href="#image-modal2">
+
+                <img src="assets/images/4.jpg" alt="">
+
+                  <div class="itemHover">
+                  </div>
+                  <h4>Mosaic</h4>
+                  <h6>Illustration</h6>
+
+              </a>
+
+              <div id="image-modal2" class="mfp-hide modal-box">
+                  <img src="assets/images/4.jpg" alt="">
+                  <div class="modal-box-content">
+                    <h4>Mosaic</h4>
+                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat. </p>
+                  </div>
+              </div>         
+
+            </div>
+
+            <div class="grid-item item-five brand fs">
+
+              <a class="image-modal" href="#image-modal3">
+
+                <img src="assets/images/3.jpg" alt="">
+
+                  <div class="itemHover">
+                  </div>
+                  <h4>Clean Desk</h4>
+                  <h6>Branding</h6>
+
+              </a>
+
+              <div id="image-modal3" class="mfp-hide modal-box">
+                  <img src="assets/images/3.jpg" alt="">
+                  <div class="modal-box-content">
+                    <h4>Clean Desk</h4>
+                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat. </p>
+                  </div>
+              </div>         
+
+            </div>
+
+            <div class="grid-item no-pad-grid item-five brand ill">
+
+              <a class="image-modal" href="#image-modal4">
+
+                <img src="assets/images/5.jpg" alt="">
+
+                  <div class="itemHover">
+                  </div>
+                  <h4>Building</h4>
+                  <h6>Illustration</h6>
+
+              </a>
+
+              <div id="image-modal4" class="mfp-hide modal-box">
+                  <img src="assets/images/5.jpg" alt="">
+                  <div class="modal-box-content">
+                    <h4>Building</h4>
+                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat. </p>
+                  </div>
+              </div>         
+
+            </div>
+
+            <div class="grid-item item-five ill fs">
+
+              <a class="image-modal" href="#image-modal5">
+
+                <img src="assets/images/2.jpg" alt="">
+
+                  <div class="itemHover">
+                  </div>
+                  <h4>Coffee Mug</h4>
+                  <h6>Illustration</h6>
+
+              </a>
+
+              <div id="image-modal5" class="mfp-hide modal-box">
+                  <img src="assets/images/2.jpg" alt="">
+                  <div class="modal-box-content">
+                    <h4>Coffee Mug</h4>
+                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat. </p>
+                  </div>
+              </div>         
+
+            </div>
+
+
+    </div>
+    </div>
+   
+    </section>
+    
+    <!-- section Clients
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+    <section id="sectionClients">
+
+    <div class="container">
+
+    <div class="sectionTitle">
+    <h1>They trust us</h1>
+    <span>Clients</span>
+    </div>
+
+    <div class="clients row">
+    <div class="col-md-4 col-sm-12 col-xs-12 clients-box-top">
+    <div class="clients-bg"></div>
+    <img src="assets/images/clients1.png" alt="">
+    </div>
+
+    <div class="col-md-4 col-sm-12 col-xs-12 clients-box-top">
+    <div class="clients-bg"></div>
+    <img src="assets/images/clients2.png" alt="">
+    </div>
+
+    <div class="col-md-4 col-sm-12 col-xs-12 clients-box-top last-client">
+    <div class="clients-bg"></div>
+    <img src="assets/images/clients3.png" alt="">
+    </div>
+
+    <div class="col-md-4 col-sm-12 col-xs-12 clients-box-bot">
+    <div class="clients-bg"></div>
+    <img src="assets/images/clients4.png" alt="">
+    </div>
+
+    <div class="col-md-4 col-sm-12 col-xs-12 clients-box-bot">
+    <div class="clients-bg"></div>
+    <img src="assets/images/clients5.png" alt="">
+    </div>
+
+    <div class="col-md-4 col-sm-12 col-xs-12 clients-box-bot last-client">
+    <div class="clients-bg"></div>
+    <img src="assets/images/clients6.png" alt="">
+    </div>
+    </div>
+
+    </div>
+
+    </section>
+    
+    
+    <!-- section Journal
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+		
+    <section id="sectionJournal">
+
+    <div class="container">
+
+    <div class="sectionTitle">
+      <h1>Our thoughts</h1>
+      <span>Journal</span>
+    </div>
+
+    <div class="row journal-line">
+    <div class="col-md-6 col-sm-12 col-xs-12 journal-text">
+    <h1>Beautiful hands</h1>
+    <h2>Posted by Admin, 10 May</h2>
+    </div>
+    <div class="col-md-6 col-sm-12 col-xs-12 journal-image">
+    <div class="category">
+    Beauty
+    </div>
+    <img src="assets/images/blog1.jpg" alt="">
+    </div>
+    </div>
+
+    <div class="row  journal-line">
+    <div class="col-md-6 col-sm-12 col-xs-12 journal-image">
+    <div class="category category-left">
+    Fashion
+    </div>
+    <img src="assets/images/blog2.png" alt="">
+    </div>
+    <div class="col-md-6 col-sm-12 col-xs-12 journal-text journal-right">
+    <h1>How to wear casual shirts</h1>
+    <h2>Posted by Admin, 6 May</h2>
+    </div>
+    </div>
+
+    <div class="row journal-line last-jour">
+    <div class="col-md-6 col-sm-12 col-xs-12 journal-text">
+    <h1>Typography is important</h1>
+    <h2>Posted by Admin, 4 May</h2>
+    </div>
+    <div class="col-md-6 col-sm-12 col-xs-12 journal-image">
+    <div class="category">
+    Design
+    </div>
+    <img src="assets/images/blog3.jpg" alt="">
+    </div>
+    </div>
+
+    </div>
+
+    </section>
+    
+    
+    <!-- section Contact
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+        <section id="sectionContact">
+
+          <div class="sectionTitle">
+            <h1>Get in touch</h1>
+            <span>Contact</span>
+          </div>     
+                  
+            <div class="container">
+                 
+                   <div class="contactForm row">
+
+                    <div class="col-md-6 col-sm-12 col-xs-12 contactLeft">
+                    <!--MESSAGE SENT SUCCESFULLY-->
+                    <div id="message"></div>
+
+                    <!--MAIN FORM-->
+
+                    <form method="post" action="assets/contact.php" name="contactform" id="contactform"> <!--Still need to develop contact.php file that will integrate a good mailing system-->
+
+                    <fieldset>
+
+                      <div class="col-md-12 col-sm-12 col-xs-12">
+                        <input name="name" type="text" id="name" placeholder="Name* :" size="30" value="" />
+                      </div>
+
+                      <div class="col-md-12 col-sm-12 col-xs-12">
+                        <input name="email" type="text" id="email" placeholder="E-mail* :" size="30" value="" />
+                      </div>
+
+                      <div class="col-md-12 col-sm-12 col-xs-12">
+                        <input name="subject" type="text" id="subject" placeholder="Subject* :" size="30" value="" />
+                      </div>
+
+                      <div class="col-md-12 col-sm-12 col-xs-12">
+                        <textarea name="comments" cols="40" rows="3" placeholder="Message* :" id="comments"></textarea>
+                      </div>
+
+                        <input type="submit" class="submit" id="submit" value="Send message" />
+                       
+
+                    </fieldset>
+
+                    </form>
+                    <!--END Main form-->
+                    </div>
+
+                    <div class="col-md-6 col-sm-12 col-xs-12">
+                    <div id="map"></div>
+                    </div>
+
+                    </div>
+                    <!-- END contact FORM-->
+            </div>
+                    
+
+                
+        </section>
+    
+    
+<!--  Javascripts
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+      <script src="assets/js/jquery-2.1.3.js"></script>
+      <script src="assets/js/bootstrap.js"></script>
+      <script src="assets/js/modernizr.custom.js"></script>
+      <!-- Navigation menu-->
+      <script src="assets/js/classie.js"></script>
+      <script src="assets/js/menu-top.js"></script>
+      <script src="assets/js/nav-active.js"></script>
+      <script src="assets/js/jquery.easing.js"></script>
+      <!--JS for MAGNIFIC POPUP & ALL SCRIPTS& CALLS-->
+      <script src="assets/js/scripts.js"></script> 
+      <script src="assets/js/jquery.magnific-popup.min.js"></script>
+      
+      <!--JS for ALL SCRIPTS& CALLS-->
+      <script src="assets/js/scripts.js"></script>    
+      <!-- WOW ANIMATIONS -->
+      <script src="assets/js/wow.min.js"></script>
+      <script src="assets/js/jquery-parallax.js"></script>
+      <!-- Masonry Package -->
+      <script src="assets/js/isotope.pkgd.min.js"></script>
+      <script src="assets/js/isotope-jquery.js"></script>
+      <script>
+        new WOW().init();
+      </script>
+
+
+
+<script type="text/javascript">
+$(document).ready(function(){
+  
+  //.parallax(xPosition, speedFactor, outerHeight) options:
+  //xPosition - Horizontal position of the element
+  //inertia - speed to move relative to vertical scroll. Example: 0.1 is one tenth the speed of scrolling, 2 is twice the speed of scrolling
+  //outerHeight (true/false) - Whether or not jQuery should use it's outerHeight option to determine when a section is in the viewport
+$('#sectionIntro').parallax({ "coeff":+0.5 });
+$('.imageIntro').parallax({ "coeff":+0.4 });
+})
+</script>
+
+<!-- GOGGLE MAP
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+        
+        <script type="text/javascript">
+            // When the window has finished loading create our google map below
+            google.maps.event.addDomListener(window, 'load', init);
+        
+            function init() {
+                // Basic options for a simple Google Map
+                // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
+                var mapOptions = {
+                    // How zoomed in you want the map to start at (always required)
+                    zoom: 11,
+
+                    // The latitude and longitude to center the map (always required)
+                    center: new google.maps.LatLng(40.1114732, -88.207328), // Champaign, IL Lincoln Square
+
+                    // How you would like to style the map. 
+                    // This is where you would paste any style found on Snazzy Maps.
+                    styles: [{"featureType":"administrative","elementType":"labels.text.fill","stylers":[{"color":"#444444"}]},{"featureType":"landscape","elementType":"all","stylers":[{"color":"#f2f2f2"}]},{"featureType":"poi","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"road","elementType":"all","stylers":[{"saturation":-100},{"lightness":45}]},{"featureType":"road.highway","elementType":"all","stylers":[{"visibility":"simplified"}]},{"featureType":"road.arterial","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"transit","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"water","elementType":"all","stylers":[{"color":"#ffffff"},{"visibility":"on"}]}]
+                };
+
+                // Get the HTML DOM element that will contain your map 
+                // We are using a div with id="map" seen below in the <body>
+                var mapElement = document.getElementById('map');
+
+                // Create the Google Map using our element and options defined above
+                var map = new google.maps.Map(mapElement, mapOptions);
+
+                // Let's also add a marker while we're at it
+                var marker = new google.maps.Marker({
+                    position: new google.maps.LatLng(40.1114732, -88.207328),
+                    map: map,
+                    title: 'Snazzy!'
+                });
+            }
+    </script>
+
+
+  </body>
 </html>

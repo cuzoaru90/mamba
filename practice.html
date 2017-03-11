@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+
+    <!-- Mobile Specific Metas
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    
+    <!-- Page title
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+	<title>Glass Mamba</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,300,500,600,700" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,400italic,700,700italic" rel="stylesheet" type="text/css">
+   
+    <!-- CSS
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+    <!-- Icons
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="stylesheet" href="assets/icons/Linea/style.css" />
+    <link rel="stylesheet" href="assets/icons/Elegant/style.css" />
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <script src="assets/js/modernizr.js"></script>
+
+  </head>
+
+  
+<body>
+
+<div class="col-md-6 col-sm-12 col-xs-12 skills">
+
+ <h5>HTML & CSS<span>90%</span></h5>
+            <div class="progress">
+            <div class="progress-bar">
+            </div>
+            </div>
+            
+            <br>
+<button onclick="move()">Click Me</button>
+
+            <h5>Wordpress<span>83%</span></h5>
+            <div class="progress">
+            <div class="progress-bar">
+            </div>
+            </div>
+
+            <h5>Photoshop<span>95%</span></h5>
+            <div class="progress">
+            <div class="progress-bar">
+            </div>
+            </div>
+
+            <h5>Javascript<span>86%</span></h5>
+            <div class="progress">
+            <div class="progress-bar">
+            </div>
+            </div>
+
+            <h5>Angular JS<span>70%</span></h5>
+            <div class="progress">
+            <div class="progress-bar">
+            </div>
+            </div>
+            
+</div>
+
+
+</body>  
+
+
+
+
+
+
+
+<!--  Javascripts
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+      <script src="assets/js/jquery-2.1.3.js"></script>
+      <script src="assets/js/bootstrap.js"></script>
+      <script src="assets/js/modernizr.custom.js"></script>
+      <!-- Navigation menu-->
+      <script src="assets/js/classie.js"></script>
+      <script src="assets/js/menu-top.js"></script>
+      <script src="assets/js/nav-active.js"></script>
+      <script src="assets/js/jquery.easing.js"></script>
+      <!--JS for MAGNIFIC POPUP & ALL SCRIPTS& CALLS-->
+      <script src="assets/js/scripts.js"></script> 
+      <script src="assets/js/jquery.magnific-popup.min.js"></script>
+      
+      <!--JS for ALL SCRIPTS& CALLS-->
+      <script src="assets/js/scripts.js"></script>    
+      <!-- WOW ANIMATIONS -->
+      <script src="assets/js/wow.min.js"></script>
+      <script src="assets/js/jquery-parallax.js"></script>
+      <!-- Masonry Package -->
+      <script src="assets/js/isotope.pkgd.min.js"></script>
+      <script src="assets/js/isotope-jquery.js"></script>
+      <script>
+        new WOW().init();
+      </script>
+
+
+
+<script type="text/javascript">
+$(document).ready(function(){
+  
+  //.parallax(xPosition, speedFactor, outerHeight) options:
+  //xPosition - Horizontal position of the element
+  //inertia - speed to move relative to vertical scroll. Example: 0.1 is one tenth the speed of scrolling, 2 is twice the speed of scrolling
+  //outerHeight (true/false) - Whether or not jQuery should use it's outerHeight option to determine when a section is in the viewport
+$('#sectionIntro').parallax({ "coeff":+0.5 });
+$('.imageIntro').parallax({ "coeff":+0.4 });
+})
+</script>
+
+<!-- GOGGLE MAP
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+        
+        <script type="text/javascript">
+            // When the window has finished loading create our google map below
+            google.maps.event.addDomListener(window, 'load', init);
+        
+            function init() {
+                // Basic options for a simple Google Map
+                // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
+                var mapOptions = {
+                    // How zoomed in you want the map to start at (always required)
+                    zoom: 11,
+
+                    // The latitude and longitude to center the map (always required)
+                    center: new google.maps.LatLng(40.1114732, -88.207328), // Champaign, IL Lincoln Square
+
+                    // How you would like to style the map. 
+                    // This is where you would paste any style found on Snazzy Maps.
+                    styles: [{"featureType":"administrative","elementType":"labels.text.fill","stylers":[{"color":"#444444"}]},{"featureType":"landscape","elementType":"all","stylers":[{"color":"#f2f2f2"}]},{"featureType":"poi","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"road","elementType":"all","stylers":[{"saturation":-100},{"lightness":45}]},{"featureType":"road.highway","elementType":"all","stylers":[{"visibility":"simplified"}]},{"featureType":"road.arterial","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"transit","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"water","elementType":"all","stylers":[{"color":"#ffffff"},{"visibility":"on"}]}]
+                };
+
+                // Get the HTML DOM element that will contain your map 
+                // We are using a div with id="map" seen below in the <body>
+                var mapElement = document.getElementById('map');
+
+                // Create the Google Map using our element and options defined above
+                var map = new google.maps.Map(mapElement, mapOptions);
+
+                // Let's also add a marker while we're at it
+                var marker = new google.maps.Marker({
+                    position: new google.maps.LatLng(40.1114732, -88.207328),
+                    map: map,
+                    title: 'Snazzy!'
+                });
+            }
+    </script>
+
+</html>
